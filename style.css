@@ -12,12 +12,48 @@ body {
     background-size: cover;
 }
 
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    10% {
+        transform: translate(2%, -2%);
+    }
+    20% {
+        transform: translate(2%, 0%);
+    }
+    30% {
+        transform: translate(1%, 1%);
+    }
+    40% {
+        transform: translate(0%, 0%);
+    }
+    50% {
+        transform: translate(-1%, -1%);
+    }
+    60% {
+        transform: translate(-2%, 0%);
+    }
+    70% {
+        transform: translate(-1%, -1%);
+    }
+    80% {
+        transform: translate(0%, 0%);
+    }
+    90% {
+        transform: translate(1%, 1%);
+    }
+}
+
 .navbar {
     box-shadow: 1px 1px 5px #fda41d;
     backdrop-filter: blur(16px);
     position: fixed;
     width: 100%; 
     height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 .navson {
@@ -46,7 +82,7 @@ img {
     display: flex;
     justify-content: flex-end;
     height: 100%;
-    width: 40%;
+    /* width: 50%; */
     padding-right: 1em;
 }    
 
@@ -77,4 +113,83 @@ li {
     color: white;
     font-size: 1rem;
     font-weight: 700;
+}
+
+.homepage1 {
+    width: 60%;
+    position: relative;
+}
+
+.slogan {
+    padding-top: 70px;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+}
+
+.desc {
+    margin-top: 4%;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+    line-height: 1.5;
+}
+
+.desc span {
+    font-weight: bold;
+    color: #fda41d;
+}
+
+.desc strong {
+    font-weight: 700;
+}
+
+.slogan img {
+    width: 80%;
+    object-fit: contain;
+}
+
+.underlineSlider {
+    position: relative;
+    left: 50%;
+    width: 50%;
+    user-select: none;
+}
+
+.underlineSlider img {
+    color: transparent;
+    width: 80%;
+    object-fit: contain;
+    transform: translate(15%);
+}
+
+.homepage1 button {
+    color: transparent;
+    position: relative;
+    margin-top: 5%;
+    cursor: pointer;
+    padding: 10px 34px;
+    border: 2px solid #fda41d;
+    border-radius: 8px;
+    background-color: #fda41d;
+}
+
+.homepage1 button a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.homepage2 {
+    width: 40%;
+    color: antiquewhite;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.homepage2 img {
+    color: transparent;
+    width: 90%;
+    object-fit: contain;
+    animation: floating 10s linear 1s infinite normal forwards running;
 }
