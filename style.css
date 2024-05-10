@@ -45,6 +45,10 @@ body {
     }
 }
 
+#home {
+    height: 100vh;
+}
+
 .navbar {
     box-shadow: 1px 1px 5px #fda41d;
     backdrop-filter: blur(16px);
@@ -86,7 +90,7 @@ img {
     padding-right: 1em;
 }    
 
-ul {
+.navItem ul {
     display: flex; 
     height: 100%;
     position: relative;
@@ -97,7 +101,7 @@ ul {
     padding: 0;
 }
 
-li {
+.navItem ul li {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -193,3 +197,12 @@ li {
     object-fit: contain;
     animation: floating 10s linear 1s infinite normal forwards running;
 }
+
+#about {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
