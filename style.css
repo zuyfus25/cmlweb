@@ -205,23 +205,23 @@ img {
     padding-bottom: 3%;
 }
 
-.heading {
+#about .heading {
     text-align: center;
     position: relative;
 }
 
-.heading h2 {
+#about .heading h2 {
     text-transform: capitalize;
     font-weight: 700;
     font-size: 2.4rem;
     color: white;
 }
 
-.heading span {
+#about .heading span {
     color: #fda41d;
 }
 
-.heading p {
+#about .heading p {
     position: absolute;
     top: 0;
     left: 50%;
@@ -368,13 +368,13 @@ img {
     flex: 0 0 auto;
 }
 
-.com1 .heading h2 {
+#community .com1 .heading h2 {
     font-size: 2.5rem;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.com1 .heading h2 span {
+#community .com1 .heading h2 span {
     color: #fda41d;
 }
 
@@ -437,3 +437,111 @@ img {
     padding-left: 10px;
     background-color: transparent;
 }
+
+#swiper {
+    width: 100%;
+    height: 500px;
+    margin-top: 5%;
+}
+
+#counterparty {
+    padding: 5% 5% 5%;
+}
+
+#counterparty .heading {
+    text-align: center;
+    position: relative;
+}
+
+#counterparty .heading h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: white;
+}
+
+#counterparty .heading span {
+    color: #fda41d;
+}
+
+#counterparty .heading p {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 6rem;
+    text-transform: uppercase;
+    opacity: 0.1;
+    color: white;
+    letter-spacing: 10px;
+    font-weight: 800;
+    line-height: 0.7;
+}
+
+#counterparty .counterparty-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#counterparty .counterparty-logo .logo-item {
+    user-select: none;
+    width: 16%;
+    flex: 0 0 auto;
+    padding: 0 15px;
+}
+
+#counterparty .counterparty-logo .logo-item img {
+    width: 100%;
+    color: transparent;
+    object-fit: contain;
+}
+
+footer {
+    box-shadow: 0px -1px 3px #fda41d;
+    backdrop-filter: blur(8px);
+    width: 100%; 
+    height: 300px;
+    padding: 3% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2.5rem;
+}
+
+.footer-icon i {
+    font-size: 36px;
+    color: white;
+}
+
+footer .copyright {
+    font-size: .8rem;
+}
+
